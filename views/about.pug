@@ -1,0 +1,59 @@
+extends layout.pug 
+
+block title
+  title #{title} 
+
+block navbar
+  li(class="nav-item")
+    a(class="nav-link", href="/") Home
+  li(class="nav-item")
+    a(class="nav-link active", href="/about") About
+  li(class="nav-item")
+    a(class="nav-link" href="/contact") Contact
+    
+block content
+  div(class="container my-5 p-0")
+    div(class="jumbotron px-4")
+      h1(class="fs-2 fw-bold mb-0") About Me
+      p(class="lead mb-4") Haldian
+      hr
+      p(class="fs-5 mb-3 text-justify")
+        | Hallo, perkenalkan nama saya Haldian saya merupakan seorang mahasiswa yang sangat antusias seekali dengan sebuah 
+        i Teknologi
+        |, di mana 
+        i Teknologi saat ini terus mengalami kemajuan, dari mulai industri 1.0 sampai industri 4.0 yang dimana 
+        i Teknologi terus mengalami perubahan yang sangat pesat.
+      p(class="fs-5 mb-3 text-justify")
+        | Namun saya sendiri senang dalam mempelajari 
+        i Teknologi 
+        | seperti pemrograman mulai dari Web Programming, Desktop Programming, Mobile Programming sampai IOT Programming. 
+        | dimana saya juga mampu dalam hal IT Networking Support, Desain, dan Mengelola Database. 
+        | Selain itu, saya juga ulet, tekun serta terampil dan rajin dalam mengerjakan suatu projek, pantang menyerah, 
+        | selalu ingin tahu, dan selalu ingin mencoba dan mempelajari hal baru.
+      p(class="fs-5 mb-2 text-justify")
+        | Berikut ini video tentang mengenai saya ketika sedang mempresentasikan sebuah projek.
+    div(class="row justify-content-center w-100 m-0")
+      div(class="col-auto p-0 m-3")
+        iframe(width="360", height="215", src="https://www.youtube.com/embed/m6dvYTo4s70", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+      div(class="col-auto p-0 m-3")
+        iframe(width="360", height="215", src="https://www.youtube.com/embed/LIMizAvTcwk", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+    hr
+    div(class="row justify-content-center w-100 m-0")
+      div(class="col-auto")
+        p(class="fs-5 text-justify") Social Media
+    div(class="row justify-content-center w-100 m-0")
+      div(class="col-auto p-2")
+        a(href="mailto:haldian23@gmail.com", class="link-primary")
+          i(class="fas fa-envelope-square fa-3x")
+      div(class="col-auto p-2")
+        a(href="#", class="link-primary")
+          i(class="fab fa-facebook-square fa-3x") 
+      div(class="col-auto p-2")
+        a(href="https://www.instagram.com/?hl=id", class="link-primary")
+          i(class="fab fa-instagram-square fa-3x")
+      div(class="col-auto p-2")
+        a(href="https://www.youtube.com/channel/UC_-Cd_sE6eKIHIK0LZjAwXQ", class="link-primary")
+          i(class="fab fa-youtube-square fa-3x")
+      div(class="col-auto p-2")
+        a(href="https://github.com/haldian18", class="link-primary")
+          i(class="fab fa-github-square fa-3x")

@@ -1,0 +1,32 @@
+extends layout.pug 
+
+block title
+  title #{title} 
+
+block navbar
+  li(class="nav-item")
+    a(class="nav-link", href="/") Home
+  li(class="nav-item")
+    a(class="nav-link", href="/about") About
+  li(class="nav-item")
+    a(class="nav-link active" href="/contact") Contact
+
+block content
+  div(class="container my-5 p-0")
+      div(class="jumbotron px-4")
+        h1(class="fs-2 fw-bold mb-0") Contact Me
+        p(class="lead mb-4") Haldian
+        hr
+        form(action="")
+          div(class="form-group")
+            label(for="inputEmail", class="fs-5 fw-bold mb-2")
+              i(class="fas fa-envelope-square fa-lg")
+              |  Email
+            input(type="email", class="form-control", id="inputEmail", aria-describedby="emailHelp", placeholder="Masukan email")
+            small(id="emailHelp", class="form-text text-muted") Tenang, saya tidak akan menyebarkan email anda.
+          div(class="form-group")
+            label(for="inputPesan", class="fs-5 fw-bold my-2")
+              i(class="fas fa-pen-square fa-lg")
+              |  Pesan
+            textarea(type="text", class="form-control", id="inputPesan", rows="8", wrap="soft", placeholder="Masukan pesan atau komentar")
+          input(type="submit", class="btn btn-outline-success mt-3", value="Kirim")

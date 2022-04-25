@@ -1,0 +1,64 @@
+extends layout.pug 
+
+block title
+  title #{title} 
+
+block navbar
+  li(class="nav-item")
+    a(class="nav-link active", href="/") Home
+  li(class="nav-item")
+    a(class="nav-link", href="/about") About
+  li(class="nav-item")
+    a(class="nav-link" href="/contact") Contact
+
+
+block content
+  div(class="container my-5 p-0")
+    div(class="jumbotron text-center px-4")
+      img(src="https://lh3.googleusercontent.com/wuq0W-dWg-llCQKtE9QKj70fYs3d8HADK3GHUXZQsBK1e5M3DHeSfIJcdRfL3F6uFbyBYYTGjEwiohsG-jXBnQnWCLuFYhI-8qRqp7bMN2vElSm6ORIHhtZEpK3JdiVeNqH2Pr-XqQ=w2400", width="220", Height="220" class="mb-4")
+      h1(class="fs-2 fw-bold mb-0") Haldian
+      p(class="lead mb-4")
+       span(class="badge bg-primary")
+        i(class="fas fa-graduation-cap")
+        |  Mahasiswa
+      hr
+      p(class="lead fw-bold mb-2") Overview
+      p(class="mb-5") Hi, Saya Haldian saya adalah mahasiswa yang sangat antusias sekali mengenai 
+        i Programming. 
+        br
+        | Saya juga sedang mempelajari 
+        i Javascript Framework dengan NodeJS
+        | dalam Matakuliah Pemrograman Web Framework.
+        
+    div(class="row justify-content-center w-100 m-0")
+      div(class="col-auto")
+        div(class="card my-2" style="width: 20rem")
+          div(class="card-body")
+          span(class="badge bg-primary")
+            h5(class="card-title m-0 text-center fw-bold")
+              i(class="fas fa-code")  
+              |  Skill
+          ul(class="list-group list-group-flush")
+            li(class="list-group-item")
+              |  HTML, CSS 
+            li(class="list-group-item")
+              |  Javascript 
+            li(class="list-group-item")
+              |  PHP 
+      div(class="col-auto")
+        div(class="card my-2" style="width: 20rem")
+          div(class="card-body")
+          span(class="badge bg-primary")
+            h5(class="card-title m-0 text-center fw-bold")
+              i(class="fas fa-business-time")
+              |  Pengalaman
+          ul(class="list-group list-group-flush")
+            li(class="list-group-item")
+              |  SEO (
+              i Search Engine Optimization
+              | )
+            li(class="list-group-item")
+              |  Aktif HMJ Ekonomi & Bisnis
+            li(class="list-group-item")
+              |  Kontribusi 
+              i Open Source
