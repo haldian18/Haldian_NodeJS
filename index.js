@@ -14,7 +14,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
 //set folder public sebagai static folder untuk static file
-app.use("/assets", express.static(path.join(__dirname, "public")));
+app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/", routes);
 
 
