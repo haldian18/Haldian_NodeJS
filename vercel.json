@@ -1,4 +1,0 @@
-{
-    "version":  21.0,
-    "builds": [{ "src": "index.js", "use": "@now/node-server" }]
-}
