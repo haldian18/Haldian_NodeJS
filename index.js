@@ -19,6 +19,5 @@ app.use("/", routes);
 
 
 //server listening
-app.listen(3000, () => {
-    console.log('server starting at port : 3000');
-});
+const port = process.env.PORT || 3000;
+app.listen(port, ()=>console.log("Aplikasi Belajar di Port ${port}"))
